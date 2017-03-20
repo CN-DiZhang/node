@@ -1,0 +1,402 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>NodejsWebApp1</Name>
+    <RootNamespace>NodejsWebApp1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ea158613-4d0c-444a-b409-7e27983f55ba</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\nodejs\crawfer.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bin\nodejs\crawfer.js" />
+    <Compile Include="bin\nodejs\getHtml.js" />
+    <Compile Include="bin\nodejs\createHtml.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bin\nodejs\nodejs.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\api\attributes.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\api\css.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\api\forms.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\api\manipulation.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\api\traversing.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\cheerio.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\parse.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\static.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\lib\utils.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\lib\attributes.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\lib\compile.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\lib\general.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\lib\pseudos.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\lib\sort.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\boolbase\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\css-what\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\lib\helpers.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\lib\legacy.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\lib\manipulation.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\lib\querying.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\lib\stringify.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\lib\traversal.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\node_modules\domelementtype\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\test\fixture.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\test\tests\helpers.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\test\tests\legacy.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\test\tests\traversal.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\test\utils.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\nth-check\compile.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\nth-check\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\nth-check\parse.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\nth-check\test.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\node_modules\domelementtype\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\entities\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\entities\lib\decode.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\entities\lib\decode_codepoint.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\entities\lib\encode.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\entities\test\test.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\CollectingHandler.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\FeedHandler.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\Parser.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\ProxyHandler.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\Stream.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\Tokenizer.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\WritableStream.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domelementtype\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\lib\element.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\lib\node.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\tests.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\lib\helpers.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\lib\legacy.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\lib\manipulation.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\lib\querying.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\lib\stringify.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\lib\traversal.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\test\fixture.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\test\tests\helpers.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\test\tests\legacy.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\test\tests\traversal.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\test\utils.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\inherits\inherits.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\inherits\inherits_browser.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\duplex.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\internal\streams\BufferList.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\_stream_duplex.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\_stream_passthrough.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\_stream_readable.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\_stream_transform.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\_stream_writable.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\buffer-shims\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is\lib\util.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is\test.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\test.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\process-nextick-args\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\process-nextick-args\test.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\util-deprecate\browser.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\util-deprecate\node.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\passthrough.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\readable.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\transform.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\writable.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.assignin\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.bind\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.defaults\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.filter\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.flatten\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.foreach\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.map\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.merge\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.pick\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reduce\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reject\index.js" />
+    <Compile Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.some\index.js" />
+    <Compile Include="bin\nodejs\student.js" />
+    <Compile Include="bin\nodejs\teacher.js" />
+    <Content Include="bin\nodejs\node_modules\cheerio\History.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\lib\procedure.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\boolbase\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\boolbase\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\css-what\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\css-what\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\css-what\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\.npmignore" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\node_modules\domelementtype\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\node_modules\domelementtype\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\node_modules\domelementtype\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\nth-check\.travis.yml" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\nth-check\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\nth-check\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\node_modules\domelementtype\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\node_modules\domelementtype\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\node_modules\domelementtype\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\.travis.yml" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\maps\decode.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\maps\entities.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\maps\legacy.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\maps\xml.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\entities\test\mocha.opts" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domelementtype\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domelementtype\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domelementtype\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\.travis.yml" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\01-basic.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\02-single_tag_1.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\03-single_tag_2.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\04-unescaped_in_script.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\05-tags_in_comment.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\06-comment_in_script.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\07-unescaped_in_style.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\08-extra_spaces_in_tag.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\09-unquoted_attrib.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\10-singular_attribute.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\11-text_outside_tags.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\12-text_only.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\13-comment_in_text.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\14-comment_in_text_in_script.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\15-non-verbose.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\16-normalize_whitespace.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\17-xml_namespace.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\18-enforce_empty_tags.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\19-ignore_empty_tags.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\20-template_script_tags.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\21-conditional_comments.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\22-lowercase_tags.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\23-dom-lvl1.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\24-with-start-indices.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\.npmignore" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\inherits\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\inherits\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\inherits\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\.npmignore" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\.travis.yml" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\doc\stream.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\doc\wg-meetings\2015-01-30.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\buffer-shims\license.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\buffer-shims\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\buffer-shims\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is\float.patch" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\.npmignore" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\.travis.yml" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\component.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\Makefile" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\process-nextick-args\.travis.yml" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\process-nextick-args\license.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\process-nextick-args\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\process-nextick-args\readme.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder\.npmignore" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\util-deprecate\History.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\util-deprecate\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\util-deprecate\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\util-deprecate\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.assignin\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.assignin\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.assignin\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.bind\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.bind\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.bind\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.defaults\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.defaults\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.defaults\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.filter\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.filter\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.filter\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.flatten\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.flatten\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.flatten\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.foreach\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.foreach\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.foreach\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.map\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.map\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.map\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.merge\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.merge\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.merge\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.pick\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.pick\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.pick\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reduce\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reduce\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reduce\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reject\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reject\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reject\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.some\LICENSE" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.some\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.some\README.md" />
+    <Content Include="bin\nodejs\node_modules\cheerio\package.json" />
+    <Content Include="bin\nodejs\node_modules\cheerio\Readme.md" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config" />
+    <Content Include="bin\ChangeConfig.ps1" />
+    <Content Include="bin\download.ps1" />
+    <Content Include="bin\setup_web.cmd" />
+    <Content Include="bin\node.cmd" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="bin\nodejs\" />
+    <Folder Include="bin\nodejs\node_modules\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\lib\api\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\boolbase\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\css-what\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\node_modules\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\node_modules\domelementtype\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\test\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\domutils\test\tests\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\css-select\node_modules\nth-check\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\node_modules\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\dom-serializer\node_modules\domelementtype\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\entities\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\entities\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\entities\maps\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\entities\test\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domelementtype\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domhandler\test\cases\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\test\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\domutils\test\tests\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\inherits\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\doc\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\doc\wg-meetings\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\internal\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\lib\internal\streams\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\buffer-shims\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is\lib\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\process-nextick-args\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\htmlparser2\node_modules\readable-stream\node_modules\util-deprecate\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.assignin\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.bind\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.defaults\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.filter\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.flatten\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.foreach\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.map\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.merge\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.pick\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reduce\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.reject\" />
+    <Folder Include="bin\nodejs\node_modules\cheerio\node_modules\lodash.some\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
